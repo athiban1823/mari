@@ -1,0 +1,852 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color:black;
+}
+header{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background-color:#FFD737;
+}
+.logo{
+    margin-left: 0px;
+    color: white;
+}
+.logo h1 img{
+    width: 130px;
+    height: auto;
+    margin-left: 100px;
+}
+.logo i{
+    display: none;
+    position: absolute;
+    left: 15px;  top: 12px;
+    font-size: 25px;
+}
+header ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+header ul li{
+    list-style: none;
+}
+.nav li{
+    cursor: pointer;
+    padding: 20px;
+    height: auto;
+}
+.srch{
+    margin-left: 20px;
+    width: 700px;
+    display: flex;
+    margin-right: 70px;
+}
+.srch input{
+    width: 700px;
+    height:40px;
+    border-radius: 0px 5px 5px 0px;
+    border: none;
+    outline: none;
+}
+.srch button{
+    height:40px;
+    padding-bottom:20px;
+    width: 40px;
+    border-radius: 5px 0px 0px 5px;
+    background-color:white;
+    border: none;
+    outline: none;
+    color: gray;
+    font-size: 10px;
+}
+.srch button i{
+padding: 10px;
+font-size: 20px;
+}
+header ul{
+    display: flex;
+    width: 100%;
+    justify-content:right;
+    list-style: none;
+    color:black;
+}
+.log .submenu{
+position:fixed;
+z-index: 888;
+right:0px;
+top:80px;
+}
+.nav{
+    margin-right: 30px;
+}
+.log ul{
+    position: absolute;
+    top:-300px; right:170px;
+    width:160px;
+    z-index: 887;
+    background-color: white;
+    display: block;
+}
+.log ul.open{
+    position: absolute;
+    top:0px;
+}
+.log i{
+    font-size: 15px;
+    color: rgb(228, 225, 225);
+}
+.log ul li i{
+ color:#FFD737;
+ margin-right:15px;
+ font-size: 15px;
+ margin-left: 5px;
+
+}
+.log ul li{
+    font-size: 16px;
+    padding-top:15px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    color: black;
+    font-weight: lighter;
+    text-align: left;
+}
+.more .submenu2{
+    position:fixed;
+    z-index: 888;
+    right:0px;
+    top:80px;
+    }
+
+.more ul{
+    position: absolute;
+    top:-300px; right:20px;
+    width: 200px;
+    display: block;
+    background-color:white;
+    z-index: 999;
+    }
+    .more ul.open2{
+        position: absolute;
+        top: 0px;
+    }
+    .more i{
+        font-size: 15px;
+        color: rgb(228, 225, 225);
+    }
+.more ul li i{
+     color:#FFD737;
+     margin-right:15px;
+    font-size: 15px;
+    margin-left: 5px;
+   
+   }
+   .more ul li{
+       font-size: 16px;
+       padding-top:15px;
+       padding-bottom: 10px;
+       padding-left: 5px;
+       color: black;
+       font-weight: lighter;
+   }
+.nav li{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* header 2 */
+.header2{
+    height: 50px;
+    background-color:white;
+    border-bottom: 2px solid rgb(205, 203, 203);
+}
+.head2{
+    padding-top: 15px;
+    text-align:left;
+}
+.head2 li{
+    display:inline;
+   padding: 30px;
+    font-weight: bold;
+}
+.head2 li i{
+    font-size: 10px;
+    color: gray;
+}
+
+.main{
+    height: 450px;
+    background-color:black;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 130px;
+    left: 0px;
+    visibility:hidden;
+}
+
+.main .sub1 {
+   background-color:black;
+   cursor: pointer;
+   width:20%;
+   height: 400px;
+   text-align: left;
+}
+ .main .sub1 h4{
+    padding-left:0px;
+    color: white;
+    font-size: 16px;
+}
+.main.sub1 li{
+    padding-left:10px;
+} 
+.sub1 hr{
+    margin-left: 20px;
+    margin-top: -10px;
+    margin-right:65px;
+}
+.main .sub1 li a{
+    margin:0px;
+    font-size: 13px;
+    color: rgb(215, 210, 210);
+    display: block;
+    padding-left:20px;
+    text-decoration: none;
+}
+.head2 .elect:hover .main{
+    visibility: visible;
+    z-index: 999;
+    transition-duration:0.5s;
+    transition-delay: 0.3s;
+    transition:all;
+}
+.head2 .tv:hover .main{
+    visibility: visible;
+    z-index: 999;
+    transition-delay: 0.3s;
+    transition:all;
+}
+.head2 .women:hover .main{
+    visibility: visible;
+    z-index: 999;
+    transition-delay: 0.3s;
+    transition:all;
+}
+.head2 .men:hover .main{
+    visibility: visible;
+    z-index: 999;
+    transition-delay: 0.3s;
+    transition:all;
+}
+.head2 .baby:hover .main{
+    visibility: visible;
+    z-index: 999;
+    transition-delay: 0.3s;
+    transition:all;
+}
+
+.cart{
+    width: 20%;
+    height: 700px;
+    background-color:aliceblue;
+    position: fixed;
+    right: -300px; top: 0px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    z-index: 999;
+}
+.cart.cart-active{
+    transition: 0.5s;
+    right: 0px;
+}
+
+/* product */
+/* side */
+.side h3{
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+.btn-group{
+    display:flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.btn-group button{
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #FFD737;
+    color: black;
+    border:3px solid #FFD737;
+    cursor: pointer;
+}
+.btn-group button:hover,
+.btn-group .btn-clicked{
+    background-color:transparent;
+    color: white;
+}
+
+/* right side */
+.title{
+    width: 95%;
+    margin: auto;
+    height: 200px;
+    font-size: 30px;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    color: white;
+}
+.pro-main{
+    width: 98%;
+    margin: auto;
+    height:auto;
+    display: flex;
+    padding-bottom: 20px;
+}
+.product hr{
+    margin-top:-60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid gray;
+}
+.pro-main .side{
+    width:100%;
+    flex:20%;
+    height:fit-content;
+    padding: 10px;
+}
+.pro-main .side2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width:100%;
+    flex: 80%;
+    height:auto;
+}
+.side2 .mini{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 20px;
+    width:22%;
+    border-radius: 10px;
+    height: 370px;
+    position: relative;
+    background-color: white;
+}
+.mini .offer{
+    background-color: rgb(8, 207, 8);
+    width: 60px;
+    position: absolute;
+    left: 10px; top: 10px;
+    border-radius: 20px;
+    color: aliceblue;
+    font-size: 15px;text-align: center;
+    padding: 7px;
+}
+
+.mini .add-cart{
+    position: absolute;
+    top: 59%; right: 10px;
+    font-size: 18px;
+    background-color: #8e44ad;
+    width: 40px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+   visibility: hidden;
+}
+ .mini:hover .add-cart{
+    visibility: visible;
+    transition:all;
+    /* background-image:url(https://bandidospitstop.com/cdn/shop/files/APEXHEX-2HELMET.webp?v=1704521512&width=1125); */
+}
+.mini .image{
+    width: 100%;
+    height:250px;
+}
+.image img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    height:250px;
+}
+.image1{
+    width: 100%;
+    background-image:url(https://bandidospitstop.com/cdn/shop/files/1_54af9d06-2c58-4c45-9031-d8b0b72a2fca.webp?v=1692441994&width=1125);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height:250px;
+}
+ .image1:hover{
+    
+    background-position: center;
+    background-size: cover;
+} 
+.image2{
+    width: 100%;
+    background-image:url(https://bandidospitstop.com/cdn/shop/files/4_7eeb74ed-c663-474a-a1d8-861ae67b9fee.webp?v=1682652632&width=1125);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height:250px;
+}
+/* .image2:hover{
+    background-image:url(https://bandidospitstop.com/cdn/shop/files/3_7b994aee-0b25-4128-8804-c8711fcb1a32.jpg?v=1724178509&width=1125://bandidospitstop.com/cdn/shop/files/1_2c7c0a90-0e93-4050-afdb-721ed427a1f7.jpg?v=1723009384&width=575);
+    background-position: center;
+    background-size: cover;
+} */
+.image3{
+    width: 100%;
+    background-image:url(https://bandidospitstop.com/cdn/shop/products/R3WingletBlack_4.jpg?v=1632912520&width=1125);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height:250px;
+}
+.image4{
+    width: 100%;
+    background-image:url(https://bandidospitstop.com/cdn/shop/products/TRITIONLEVERGUARD_2.jpg?v=1662448628&width=1125);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height:250px;
+}
+.image5{
+    width: 100%;
+    background-image:url(https://bandidospitstop.com/cdn/shop/files/1_60c55564-9b15-4a6b-9990-45bdd3f2aaab.webp?v=1682579340&width=1125);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height:250px;
+}
+.image6{
+    width: 100%;
+    background-image:url(https://bandidospitstop.com/cdn/shop/files/1_c7b4315d-c6d8-4c1d-ad1d-b5899259983a.webp?v=1691144855&width=1125);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height:250px;
+}
+.image7{
+    width: 100%;
+    background-image:url(https://bandidospitstop.com/cdn/shop/products/9117.jpg?v=1667544670&width=1125);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height:250px;
+}
+.image8{
+    width: 100%;
+    background-image:url(https://bandidospitstop.com/cdn/shop/files/HONDANX500CRASHGUARD1.jpg?v=1716615643&width=1125);
+    background-position:center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height:250px;
+}
+.image9{
+    width: 100%;
+    background-image:url(https://bandidospitstop.com/cdn/shop/files/CAP15402LCBHONDANX500SPYROREAROILCAPAL1.jpg?v=1716619662&width=1125);
+    background-position:center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height:250px;
+}
+.image10{
+    width: 100%;
+    background-image:url(https://bandidospitstop.com/cdn/shop/files/RAG15403LCBHONDANX500VECTORRADIATORGRILLAL1.jpg?v=1716796599&width=1125https://bandidospitstop.com/cdn/shop/files/RAG15403LCBHONDANX500VECTORRADIATORGRILLAL1.jpg?v=1716796599&width=1125);
+    background-position:center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height:250px;
+}
+.image11{
+    width: 100%;
+    background-image:url(https://bandidospitstop.com/cdn/shop/files/CAP15401LCBHONDANX500TRICORNFRONTOILCAPAL1.jpg?v=1716800985&width=1125);
+    background-position:center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height:250px;
+}
+.image12{
+    width: 100%;
+    background-image:url(https://bandidospitstop.com/cdn/shop/products/legundary-venator-headlight-grill-cb200x-with-fittings-GRG6693E4.webp?v=1663913756&width=1125);
+    background-position:center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height:250px;
+}
+.image13{
+    width: 100%;
+    background-image:url(https://bandidospitstop.com/cdn/shop/products/KTM200BlackVisor-5_2_004f42d7-43ee-4365-ad76-3584f55ccae0.jpg?v=1661402074&width=1125);
+    background-position:center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height:250px;
+}
+.image14{
+    width: 100%;
+    background-image:url(https://bandidospitstop.com/cdn/shop/products/x-flash_4f832d98-955c-4cc5-a268-5b1655a0f210.jpg?v=1639026350&width=1125);
+    background-position:center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height:250px;
+}
+.image15{
+    width: 100%;
+    background-image:url(https://bandidospitstop.com/cdn/shop/products/crashguard4.webp?v=1663999016&width=1125);
+    background-position:center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height:250px;
+}
+.image16{
+    width: 100%;
+    background-image:url(https://bandidospitstop.com/cdn/shop/products/ktmindicator_1.jpg?v=1632473593&width=1125);
+    background-position:center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height:250px;
+}
+.image17{
+    width: 100%;
+    background-image:url(https://bandidospitstop.com/cdn/shop/files/IND14861KTMOED81SDUALPAIRYELLOWINDICATOR1.jpg?v=1712488434&width=1125);
+    background-position:center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height:250px;
+}
+.image18{
+    width: 100%;
+    background-image:url(https://bandidospitstop.com/cdn/shop/files/IND14028KTMOED82SDUALPAIRYELLOW_REDRUNNINGINDICATORq3.jpg?v=1720257966&width=1125);
+    background-position:center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height:250px;
+}
+.image19{
+    width: 100%;
+    background-image:url(https://bandidospitstop.com/cdn/shop/files/2_cfbac9af-de70-4149-9ccc-1df71cbbb3e4.jpg?v=1697777032&width=1125);
+    background-position:center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height:250px;
+}
+.image20{
+    width: 100%;
+    background-image:url(https://bandidospitstop.com/cdn/shop/files/2_99216c86-00a3-4845-94a7-5caf20db1ca4.jpg?v=1697777085&width=1125);
+    background-position:center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height:250px;
+}
+.image21{
+    width: 100%;
+    background-image:url(https://bandidospitstop.com/cdn/shop/files/SAD10259MTQApacheRTR200SaddleStay_81193411-3857-4b43-bba1-f0fa0a037a21.jpg?v=1719992598&width=1125);
+    background-position:center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height:250px;
+}
+.image22{
+    width: 100%;
+    background-image:url(https://bandidospitstop.com/cdn/shop/files/1_1daab700-9f9b-4a41-8ee2-042704b42c98.jpg?v=1724317365&width=1125);
+    background-position:center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height:250px;
+}
+.image23{
+    width: 100%;
+    background-image:url(https://bandidospitstop.com/cdn/shop/products/BMWG310GSLOWERCRASHGUARDBLACK_5.jpg?v=1632907532&width=1125);
+    background-position:center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height:250px;
+}
+.image24{
+    width: 100%;
+    background-image:url(https://bandidospitstop.com/cdn/shop/products/BMWG310GSUPPERCRASHGUARDMS_1_ef8071d8-ddc1-4a7d-802d-f57d6ce2f418.jpg?v=1634014503&width=800);
+    background-position:center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height:250px;
+}
+.image25{
+    width: 100%;
+    background-image:url(https://bandidospitstop.com/cdn/shop/products/black_c4908cb3-85f7-42ba-bf9f-2944364548c1.jpg?v=1659931064&width=1125);
+    background-position:center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height:250px;
+}
+.image26{
+    width: 100%;
+    background-image:url(https://bandidospitstop.com/cdn/shop/products/NINJAFRAMESLIDER_3.jpg?v=1657540598&width=1125);
+    background-position:center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height:250px;
+}
+.image27{
+    width: 100%;
+    background-image:url(https://bandidospitstop.com/cdn/shop/products/KAWASAKININJA300_NINJA400TAILTIDY_6.jpg?v=1632717177&width=1125);
+    background-position:center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height:250px;
+}
+.image28{
+    width: 100%;
+    background-image:url(https://bandidospitstop.com/cdn/shop/products/StainlessSteelBendPipeforKAWASAKIZ900_16.jpg?v=1632893032&width=1125);
+    background-position:center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height:250px;
+}
+.image29{
+    width: 100%;
+    background-image:url(https://bandidospitstop.com/cdn/shop/files/2_13acdab6-38fa-42d4-80a1-388a16bc003d.webp?v=1705142437&width=1125);
+    background-position:center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height:250px;
+}
+.image30{
+    width: 100%;
+    background-image:url(https://bandidospitstop.com/cdn/shop/files/5_d15997f3-09ee-4d76-84a4-3f25c0f073a2.webp?v=1706245826&width=1125);
+    background-position:center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height:250px;
+}
+.image31{
+    width: 100%;
+    background-image:url(https://bandidospitstop.com/cdn/shop/files/EXH13487RRPHUNTER350POLISHRUMBLERMAXEXHAUST1.jpg?v=1711608021&width=1125);
+    background-position:center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height:250px;
+}
+.image32{
+    width: 100%;
+    background-image:url(https://bandidospitstop.com/cdn/shop/products/1_20bb8f89-f0b4-4f5b-83eb-e6bbfc49a3d3.webp?v=1668513685&width=1125);
+    background-position:center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height:250px;
+}
+.image33{
+    width: 100%;
+    background-image:url(https://bandidospitstop.com/cdn/shop/products/REBULLETHEATSHIELDBLACK.jpg?v=1664019115&width=1125);
+    background-position:center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height:250px;
+}
+.image34{
+    width: 100%;
+    background-image:url(https://bandidospitstop.com/cdn/shop/products/EXH0370-RRP-RUMBLER-MATTE-BLACK-CLASSICTBSTD.jpg?v=1676708696&width=1125);
+    background-position:center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height:250px;
+}
+.image35{
+    width: 100%;
+    background-image:url(https://bandidospitstop.com/cdn/shop/products/BUBBLEVISOR_5.jpg?v=1674293507&width=1125);
+    background-position:center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height:250px;
+}
+.image36{
+    width: 100%;
+    background-image:url(https://bandidospitstop.com/cdn/shop/products/220150carrier_f9dec931-a146-4279-abfa-2e1c9bea7c98.jpg?v=1682567488&width=1125);
+    background-position:center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height:250px;
+}
+.image37{
+    width: 100%;
+    background-image:url(https://bandidospitstop.com/cdn/shop/products/HIMALAYANCARRIER_3.jpg?v=1659947909&width=1125);
+    background-position:center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height:250px;
+}
+.image38{
+    width: 100%;
+    background-image:url(https://bandidospitstop.com/cdn/shop/products/4_ce8b8115-9b47-4f30-b2c7-196c264ef925.webp?v=1668497886&width=1125);
+    background-position:center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height:250px;
+}
+.image39{
+    width: 100%;
+    background-image:url(https://bandidospitstop.com/cdn/shop/files/2_63d0824d-e441-4ab6-9a6d-342521f3b49d.webp?v=1682580058&width=1125);
+    background-position:center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height:250px;
+}
+
+
+.content{
+    padding-top: 20px;
+    padding-left:20px;
+    padding-right: 5px;
+}
+.content h4{
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+.content p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.content p span{
+       text-decoration: line-through;
+       font-weight: lighter;
+       font-size: 15px;
+}
+
+/* footer */
+/* footer */
+
+.sun{
+    background-color:#FFD737;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    margin-top: 50px;
+}
+.aro{
+    
+    height: 600px;
+    width: 35%;
+    margin: 3px;
+    color: black;
+}
+.aro img{
+    margin-left: 60px;
+    width: 160px;
+    margin-top: 20px;
+   
+}
+.aro p{
+    margin-top: -0px;
+    margin-left: 60px;
+    color: black;
+}
+.aro button{
+    margin-left: 90px;
+    padding: 5px;
+    margin-top: 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    font-size: 10px;
+    border-radius:20px;
+    padding: 10px;
+    font-weight: bold;
+
+}
+.aro button:hover{
+    background-color: black;
+    color: black;
+}
+.raj {
+    margin-top: 30px;
+    margin-left: 60px;
+}
+.raj i{
+    font-size: 20px;
+    color: black;
+    margin-right: 10px;
+
+}
+.saku{
+    
+    height: 600px;
+    width: 20%;
+    margin: 3px;
+}
+.saku p{
+    margin-top: 130px;
+    margin-left: 60px;
+    color: black;
+}
+.saku a{
+    text-decoration: none;
+    margin-top: 100px;
+    margin-left: 60px;
+    color: black;
+    
+}
+.selva{
+    
+    height: 600px;
+    width: 20%;
+    margin: 3px;
+}
+.selva p{
+    margin-top: 130px;
+    margin-left: 60px;
+    color: black;
+}
+.selva a{
+    text-decoration: none;
+    margin-top: 100px;
+    margin-left: 60px;
+    color: black;
+    
+}
+.aji{
+    
+    height: 600px;
+    width: 35%;
+    margin: 5px;
+    color: black;
+}
+.aji p{
+    margin-left: 60px;
+    margin-top: 130px;
+}
+.email input{
+    margin-left: 60px;
+    width: 300px;
+    height: 40px;background-color: aliceblue;
+    border: none;
+    margin-top: 10px;
+    border-radius: 20px;
+    text-indent: 10px;
+}
+
+.email input:focus{
+    text-indent: 10px;
+    outline: none;
+}
+
+.email i{
+    margin-left: -30px;
+    font-size: 23px;
+    color: black;
+    margin-top:px;
+}
